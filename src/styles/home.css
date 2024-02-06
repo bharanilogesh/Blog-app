@@ -1,0 +1,93 @@
+.home {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.homeHeader {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+.homeHeader_title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeHeader_title h3 {
+  color: #15a3ef;
+  font-size: 1.2rem;
+}
+
+.homeHeader_subTitle h1 {
+  position: relative;
+  top: 10px;
+  color: #08527a;
+  display: inline;
+  margin: 0 0.75rem;
+  font-size: 2rem;
+}
+
+.homeHeader_subTitle span {
+  color: #8fd3f7;
+}
+
+.homeHeader_title p {
+  text-align: center;
+  width: 80%;
+  margin-top: 1.5rem;
+  color: gray;
+  font-size: 1rem;
+}
+
+.search-bar {
+  margin-top: 2rem auto;
+  width: 100%;
+  height: 1.5rem;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 17rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  background-color: gainsboro;
+  border-radius: 0.5rem;
+  border: 1px solid #08527a;
+}
+
+.search-bar input:focus {
+  font-weight: 700;
+  color: #08527a;
+}
+
+@media screen and (min-width: 767px) {
+  .homeHeader_title h3 {
+    font-size: 1.75rem;
+  }
+  .homeHeader_subTitle h1 {
+    font-size: 2.75rem;
+  }
+  .homeHeader_subTitle span {
+    font-size: 1.75rem;
+  }
+  .homeHeader_title p {
+    text-align: center;
+    width: 25rem;
+  }
+  .search-bar input {
+    width: 25rem;
+  }
+}

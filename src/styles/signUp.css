@@ -1,0 +1,204 @@
+.contact {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 0rem;
+  margin-top: 5rem;
+  background-color: #020617;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-name {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0.75rem auto;
+}
+
+.title-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.2rem auto 0rem auto;
+  color: #6d6a7c;
+}
+
+.contact-form {
+  width: 35rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border: 1px solid #f6f5f5;
+  padding: 2.2rem;
+  background-color: #8df0e0;
+  border-radius: 0.75rem;
+}
+
+.contact-form-name,
+.contact-form-email,
+.contact-form-message {
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: #202124;
+  border: 1px solid #e0e0e0;
+  font-weight: 700;
+}
+
+.contact-form-name:focus,
+.contact-form-email:focus,
+.contact-form-message:focus {
+  border: 2px solid;
+  border-color: #000;
+  background-color: mintcream;
+}
+
+.btn-container {
+  width: 100%;
+}
+
+.connect {
+  background-color: rgb(26, 115, 232);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin: 1.2rem auto;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.connect:hover {
+  filter: brightness(125%);
+}
+
+.connect-icon {
+  position: relative;
+  top: 2.5px;
+  margin-left: 0.75rem;
+}
+
+.already-acc {
+  width: 100%;
+  text-align: left;
+}
+
+.already-acc-log {
+  color: #50458a;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.already-acc-log:hover {
+  filter: brightness(65%);
+}
+
+.demoEmail {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4a465e;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #020617;
+  color: #fff;
+}
+
+.trail-email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.trail-email div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.trail-email div h4 {
+  color: #6d6a7c;
+}
+
+.trail-email div p {
+  font-weight: 600;
+}
+
+.demoEmail-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 25rem;
+    padding: 1.5rem 1rem 0.5rem;
+  }
+  .demoEmail {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6d6a7c;
+    gap: 1rem;
+    padding: 1.75rem;
+  }
+
+  .trail-email {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .trail-email div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .demoEmail-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-form {
+    width: 17rem;
+  }
+  .contact-form-name,
+  .contact-form-email,
+  .contact-form-message {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .connect {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    /* margin-top: 8rem; */
+  }
+  .btn-container {
+    width: 100%;
+  }
+}

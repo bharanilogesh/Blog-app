@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_para {
+  width: 100%;
+  text-align: center;
+}
+
+.footerLink-name {
+}
+
+@media screen and (min-width: 475px) {
+  .footer_para {
+    font-size: 1.1rem;
+  }
+}

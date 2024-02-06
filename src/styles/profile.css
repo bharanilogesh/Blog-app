@@ -1,0 +1,213 @@
+.profile {
+  min-height: 95vh;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  margin-top: 1rem;
+  position: relative;
+  top: 3rem;
+  text-align: center;
+}
+
+.profile-img img {
+  width: 75%;
+  height: 10rem;
+  border-radius: 50%;
+  padding: 0.25rem;
+  background-color: #fff;
+  outline-style: solid;
+  outline-color: #1e73e9;
+  outline-width: 4px;
+}
+
+.profile-data {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0ca9ec;
+  padding: 4rem 0.75rem;
+  border: none;
+  border-radius: 0.75rem;
+  gap: 2rem;
+}
+
+.profile-data h1 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.profile-id,
+.profile-name,
+.profile-email,
+.profile-phoneNum,
+.profile-password,
+.profile-confirmPassword,
+.profile-city,
+.profile-state,
+.profile-address,
+.profile-radio {
+  width: 100%;
+  background-color: rgba(99, 129, 198, 0.3);
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.profile-id input,
+.profile-name input,
+.profile-email input,
+.profile-phoneNum input,
+.profile-password input,
+.profile-confirmPassword input,
+.profile-city input,
+.profile-state input,
+.profile-address input {
+  width: 100%;
+  padding: 0.25rem;
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.profile-data .profile-row label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.75rem;
+}
+
+.profile-name input {
+  text-transform: uppercase;
+}
+
+.profile-row {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-radio input {
+  width: 1rem;
+}
+
+.profile-radioContainer div {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.profile-city select {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.profile-inputImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-inputImg div {
+  text-align: center;
+  width: 87%;
+  color: #fff;
+  background-color: rgba(125, 156, 226, 0.3);
+  padding: 1rem 1.75rem;
+  border-radius: 0.25rem;
+}
+
+.profile-inputImg div label {
+  text-align: left;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.profile-inputImg div input {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.profile-btnContainer {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-data button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: rgba(15, 23, 42, 0.3);
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile-data button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.profile-row-readonly {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-row-readonly input,
+.profile-row-readonly select {
+  background-color: #d1d1d1;
+}
+
+.profile-data .profile-row-readonly label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .profile-data {
+    max-width: 60rem;
+  }
+  .profile-row {
+    width: 90%;
+    flex-direction: row;
+  }
+  .profile-row-readonly {
+    width: 90%;
+    flex-direction: row;
+  }
+  .profile-radioContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .profile-inputImg div {
+    width: 100%;
+  }
+  .profile-data button {
+    padding: 0.75rem 1.5rem;
+  }
+}

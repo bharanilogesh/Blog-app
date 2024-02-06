@@ -1,0 +1,90 @@
+.createPost {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.75rem;
+}
+
+.createPost-title {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #f32170, #ffeb07, #2196f3, #ff00eb);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.createPost-form {
+  width: 17rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.createPost-form input,
+.createPost-form textarea,
+.createPost-form-img input {
+  width: 100%;
+}
+
+.createPost-form input,
+.createPost-form textarea {
+  padding: 0.5rem 2rem;
+  resize: none;
+  font-size: 1rem;
+}
+.createPost-form textarea {
+  overflow-y: scroll;
+}
+
+.createPost-form-img input {
+  width: 100%;
+  padding: 0;
+}
+
+input::file-selector-button {
+  padding: 0.35rem 0.75rem;
+  background-color: #f8a100;
+}
+
+.createPostBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.createPostBtn input {
+  background-color: grey;
+  border-radius: 0.25rem;
+  border: none;
+  color: #ea1d6f;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.createPostBtn input:hover {
+  background-color: #f8a100;
+}
+
+@media screen and (min-width: 767px) {
+  .createPost-title {
+    font-size: 2rem;
+  }
+  .createPost-form {
+    width: 25rem;
+  }
+  .createPost-form input,
+  .createPost-form textarea,
+  .createPost-form-img input {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
